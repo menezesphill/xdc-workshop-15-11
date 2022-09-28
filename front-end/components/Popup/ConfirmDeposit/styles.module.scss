@@ -1,0 +1,104 @@
+.warning {
+  width: 100%;
+  max-width: 700px;
+  height: 290px;
+  background: rgba(15, 15, 15, 1);
+  border: 1.5px solid rgba(41, 255, 50, 1);
+  border-radius: 10px;
+  z-index: 2;
+
+  .closeWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    span {
+      padding-left: 10px;
+      color: rgba(41, 255, 50, 1);
+      font-size: 30px;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+
+    img {
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+      display: flex;
+      width: 88%;
+
+      span {
+        text-transform: uppercase;
+        color: rgba(108, 117, 125, 1);
+        letter-spacing: 2px;
+      }
+    }
+
+    .maxerText {
+      margin-top: -30px;
+      margin-left: 420px;
+      display: flex;
+      width: 20%;
+      justify-content: flex-end;
+      text-transform: uppercase;
+      color: rgba(41, 255, 50, 1);
+      letter-spacing: 2px;
+      cursor: pointer;
+
+      @media screen and (max-width: 650px) {
+        margin-left: 220px;
+      }
+    }
+
+    input {
+      margin-top: 15px;
+      width: 88%;
+      background-color: #1e1e1e;
+      border: 0;
+      outline: 0;
+      font-family: Consolas;
+      padding: 20px;
+      height: 30px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .buttonContainer {
+      width: 88%;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .button {
+        width: 100%;
+        max-width: 220px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 16px;
+        border: 1.5px solid rgba(41, 255, 50, 1);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+          background-color: rgba(41, 255, 50, 1);
+          color: black;
+        }
+      }
+    }
+  }
+}

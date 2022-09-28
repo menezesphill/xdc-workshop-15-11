@@ -1,0 +1,12 @@
+{
+  "name": "xdc-staking-dapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/menezesphill/xdc-staking-dapp.git",
+  "author": "Phillipe Menezes <phillipe.o.m@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.15",
+    "dotenv": "^16.0.2"
+  }
+}

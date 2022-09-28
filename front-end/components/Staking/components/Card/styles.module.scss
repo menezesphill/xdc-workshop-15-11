@@ -1,0 +1,296 @@
+.card {
+  width: 100%;
+  max-width: 520px;
+
+  .header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .name {
+      display: flex;
+
+      .text {
+        width: 110px;
+        color: rgba(41, 255, 50, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        border: 1.5px solid rgba(41, 255, 50, 1);
+        border-right: 0;
+        border-bottom: 0;
+        border-top-left-radius: 15px;
+        padding-left: 15px;
+
+        img {
+          padding-right: 10px;
+          width: 50px !important;
+        }
+
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
+      }
+
+      .textMobile {
+        width: 60px;
+        color: rgba(41, 255, 50, 1);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        border: 1.5px solid rgba(41, 255, 50, 1);
+        border-right: 0;
+        border-bottom: 0;
+        border-top-left-radius: 15px;
+        padding-left: 30px;
+
+        img {
+          padding-right: 10px;
+          width: 50px !important;
+        }
+
+        @media screen and (max-width: 600px) {
+          display: flex;
+        }
+      }
+
+      .divisor {
+        width: 30px;
+        height: 60px;
+        padding: 0;
+
+        ::after {
+          content: "";
+          position: absolute;
+          border-top: 1.5px solid rgba(41, 255, 50, 1);
+          width: 85px;
+          transform: rotate(45deg);
+          transform-origin: 0% 0%;
+        }
+      }
+    }
+
+    .action {
+      display: flex;
+      cursor: pointer;
+
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+      }
+
+      .firstAction {
+        display: flex;
+
+        @media screen and (max-width: 600px) {
+          justify-content: flex-end;
+        }
+
+        .claim {
+          width: 50px;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          background-color: rgba(31, 31, 31, 1);
+
+          @media screen and (max-width: 600px) {
+            display: none;
+          }
+        }
+
+        .claimDivisor {
+          width: 60px;
+          height: 60px;
+          padding: 0;
+          background: linear-gradient(
+            135deg,
+            transparent 50%,
+            rgba(31, 31, 31, 1) 50%
+          );
+
+          @media screen and (max-width: 600px) {
+            display: none;
+          }
+        }
+
+        .claimMobile {
+          width: 60px;
+          height: 40px;
+          color: white;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          background-color: rgba(31, 31, 31, 1);
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+
+          @media screen and (max-width: 600px) {
+            display: flex;
+          }
+        }
+      }
+
+      .secondAction {
+        display: flex;
+
+        .text {
+          width: 100px;
+          color: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          background-color: rgba(41, 255, 50, 1);
+          border-top-right-radius: 15px;
+          padding-right: 15px;
+
+          @media screen and (max-width: 600px) {
+            display: none;
+          }
+        }
+
+        .textMobile {
+          width: 60px;
+          color: black;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          background-color: rgba(41, 255, 50, 1);
+          padding-right: 15px;
+
+          @media screen and (max-width: 600px) {
+            display: flex;
+          }
+        }
+
+        .divisor {
+          width: 60px;
+          height: 60px;
+          padding: 0;
+          background: linear-gradient(
+            135deg,
+            rgba(31, 31, 31, 1) 50%,
+
+            rgba(41, 255, 50, 1) 50%
+          );
+
+          @media screen and (max-width: 600px) {
+            background: linear-gradient(
+              135deg,
+              transparent 50%,
+
+              rgba(41, 255, 50, 1) 50%
+            );
+          }
+        }
+
+        .divisorDisabled {
+          width: 60px;
+          height: 60px;
+          padding: 0;
+          background: linear-gradient(
+            135deg,
+            rgba(31, 31, 31, 0) 50%,
+
+            rgba(41, 255, 50, 1) 50%
+          );
+        }
+
+        @media screen and (max-width: 500px) {
+          background: linear-gradient(
+            135deg,
+            transparent 50%,
+            rgba(41, 255, 50, 1) 50%
+          );
+        }
+      }
+    }
+  }
+}
+
+.content {
+  border: 1.5px solid rgba(41, 255, 50, 1);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  height: 200px;
+
+  @media screen and (max-width: 515px) {
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+
+  .infos1 {
+    padding: 8px 18px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgba(131, 131, 131, 1);
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+
+    span {
+      color: rgba(41, 255, 50, 1);
+    }
+
+    @media screen and (max-width: 515px) {
+      justify-content: center;
+      padding: 0;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 15px;
+    }
+  }
+
+  .infos2 {
+    padding: 0 18px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgba(131, 131, 131, 1);
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+
+    span {
+      color: rgba(41, 255, 50, 1);
+    }
+
+    @media screen and (max-width: 515px) {
+      justify-content: center;
+      padding: 0;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 15px;
+    }
+  }
+
+  .row {
+    padding: 6px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(41, 255, 50, 1);
+    font-size: 18px;
+
+    @media screen and (max-width: 515px) {
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 15px;
+    }
+  }
+}
