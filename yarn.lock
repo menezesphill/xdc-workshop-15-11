@@ -100,6 +100,11 @@
     "@ethereumjs/common" "^2.6.4"
     ethereumjs-util "^7.1.5"
 
+"@metamask/detect-provider@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@metamask/detect-provider/-/detect-provider-1.2.0.tgz#3667a7531f2a682e3c3a43eaf3a1958bdb42a696"
+  integrity sha512-ocA76vt+8D0thgXZ7LxFPyqw3H7988qblgzddTDA6B8a/yU0uKV42QR/DhA+Jh11rJjxW0jKvwb5htA6krNZDQ==
+
 "@metamask/eth-sig-util@4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@metamask/eth-sig-util/-/eth-sig-util-4.0.1.tgz#3ad61f6ea9ad73ba5b19db780d40d9aae5157088"
@@ -1712,6 +1717,13 @@ ws@^5.1.1:
   integrity sha512-jZArVERrMsKUatIdnLzqvcfydI85dvd/Fp1u/VOpfdDWQ4c9qWXe+VIeAbQ5FrDwciAkr+lzofXLz3Kuf26AOA==
   dependencies:
     async-limiter "~1.0.0"
+
+xdcpay-web3modal@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/xdcpay-web3modal/-/xdcpay-web3modal-1.0.3.tgz#d9249cf134914ceaebf8bacdc08767dfe30ce5e8"
+  integrity sha512-LlblnNrhUwnKyFSRXTBNvH3SBjnPfpZiH083mCziU1f60CYRrCt5BbAAXohdTiKcEJUkiuL2kLeJ+tSoeQHZPQ==
+  dependencies:
+    "@metamask/detect-provider" "^1.2.0"
 
 xhr@^2.2.0:
   version "2.6.0"
