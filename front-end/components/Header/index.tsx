@@ -1,15 +1,25 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState, useContext, useCallback } from "react";
 import { Web3ModalContext } from "../../contexts/Web3ModalProvider";
+import { TokenContext } from "../../contexts/TokenProvider";
 import styles from "./styles.module.scss";
 
 const Header: React.FC = () => {
   const router = useRouter();
   const [windowSize, setWindowSize] = useState(0);
   const { connect, disconnect, account } = useContext(Web3ModalContext);
+  const { faucetWrapper } = useContext(TokenContext);
 
   function ellipseAddress(address: string = "", width: number = 2): string {
     return `${address.slice(0, width + 2)}...${address.slice(-width)}`;
+  }
+
+  const handleFaucet = () => {
+    if (faucetWrapper) {
+      faucetWrapper.claimTokens()
+      .then( () => alert("Tokens claimed!") )
+      .catch( (err) => alert("Error:" + err) );
+    }
   }
 
   const handleConnectWallet = useCallback(() => {
@@ -149,6 +159,9 @@ const Header: React.FC = () => {
               <span id="secondLine" />
               <span id="thirdLine" />
             </label>
+            <div className={styles.button} onClick={handleFaucet}>
+                Drop Me MTK
+            </div>
             {!account ? (
               <div className={styles.button} onClick={handleConnectWallet}>
                 Connect

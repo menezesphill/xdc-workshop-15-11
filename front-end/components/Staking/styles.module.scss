@@ -12,7 +12,7 @@
     flex-direction: column;
 
     h1 {
-      color: rgba(41, 255, 50, 1);
+      color: rgb(255, 255, 255);
       padding: 80px 30px 30px 30px;
       font-size: 35px;
 
@@ -60,12 +60,12 @@
 
               .text {
                 width: 110px;
-                color: rgba(41, 255, 50, 1);
+                color: rgb(255, 255, 255);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 font-size: 18px;
-                border: 1.5px solid rgba(41, 255, 50, 1);
+                border: 1.5px solid rgb(255, 255, 255);
                 border-right: 0;
                 border-bottom: 0;
                 border-top-left-radius: 15px;
@@ -82,12 +82,12 @@
 
               .textMobile {
                 width: 60px;
-                color: rgba(41, 255, 50, 1);
+                color: rgb(255, 255, 255);
                 display: none;
                 align-items: center;
                 justify-content: center;
                 font-size: 18px;
-                border: 1.5px solid rgba(41, 255, 50, 1);
+                border: 1.5px solid rgb(255, 255, 255);
                 border-right: 0;
                 border-bottom: 0;
                 border-top-left-radius: 15px;
@@ -110,7 +110,7 @@
                 ::after {
                   content: "";
                   position: absolute;
-                  border-top: 1.5px solid rgba(41, 255, 50, 1);
+                  border-top: 1.5px solid rgb(255, 255, 255);
                   width: 85px;
                   transform: rotate(45deg);
                   transform-origin: 0% 0%;
@@ -129,7 +129,7 @@
                 align-items: center;
                 justify-content: center;
                 font-size: 18px;
-                background-color: rgba(41, 255, 50, 1);
+                background-color: rgb(255, 255, 255);
                 border-top-right-radius: 15px;
                 padding-right: 15px;
 
@@ -145,7 +145,7 @@
                 align-items: center;
                 justify-content: center;
                 font-size: 18px;
-                background-color: rgba(41, 255, 50, 1);
+                background-color: rgb(255, 255, 255);
                 border-top-right-radius: 15px;
                 padding-right: 15px;
 
@@ -161,14 +161,14 @@
                 background: linear-gradient(
                   135deg,
                   transparent 50%,
-                  rgba(41, 255, 50, 1) 50%
+                  rgb(255, 255, 255) 50%
                 );
               }
             }
           }
 
           .content {
-            border: 1.5px solid rgba(41, 255, 50, 1);
+            border: 1.5px solid rgb(255, 255, 255);
             padding-bottom: 6px;
             border-bottom-right-radius: 15px;
             border-bottom-left-radius: 15px;
@@ -189,7 +189,7 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
-              color: rgba(41, 255, 50, 1);
+              color: rgb(255, 255, 255);
               font-size: 18px;
 
               @media screen and (max-width: 515px) {
@@ -237,12 +237,12 @@
 
               .text {
                 width: 110px;
-                color: rgba(41, 255, 50, 1);
+                color: rgb(255, 255, 255);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 font-size: 18px;
-                border: 1.5px solid rgba(41, 255, 50, 1);
+                border: 1.5px solid rgb(255, 255, 255);
                 border-right: 0;
                 border-bottom: 0;
                 border-top-left-radius: 15px;
@@ -259,12 +259,12 @@
 
               .textMobile {
                 width: 60px;
-                color: rgba(41, 255, 50, 1);
+                color: rgb(255, 255, 255);
                 display: none;
                 align-items: center;
                 justify-content: center;
                 font-size: 18px;
-                border: 1.5px solid rgba(41, 255, 50, 1);
+                border: 1.5px solid rgb(255, 255, 255);
                 border-right: 0;
                 border-bottom: 0;
                 border-top-left-radius: 15px;
@@ -287,7 +287,7 @@
                 ::after {
                   content: "";
                   position: absolute;
-                  border-top: 1.5px solid rgba(41, 255, 50, 1);
+                  border-top: 1.5px solid rgb(255, 255, 255);
                   width: 85px;
                   transform: rotate(45deg);
                   transform-origin: 0% 0%;
@@ -367,7 +367,7 @@
                   align-items: center;
                   justify-content: center;
                   font-size: 18px;
-                  background-color: rgba(41, 255, 50, 1);
+                  background-color: rgb(255, 255, 255);
                   border-top-right-radius: 15px;
                   padding-right: 15px;
 
@@ -383,7 +383,7 @@
                   align-items: center;
                   justify-content: center;
                   font-size: 18px;
-                  background-color: rgba(41, 255, 50, 1);
+                  background-color: rgb(255, 255, 255);
                   padding-right: 15px;
 
                   @media screen and (max-width: 600px) {
@@ -398,14 +398,14 @@
                   background: linear-gradient(
                     135deg,
                     rgba(31, 31, 31, 1) 50%,
-                    rgba(41, 255, 50, 1) 50%
+                    rgb(255, 255, 255) 50%
                   );
 
                   @media screen and (max-width: 500px) {
                     background: linear-gradient(
                       135deg,
                       transparent 50%,
-                      rgba(41, 255, 50, 1) 50%
+                      rgb(255, 255, 255) 50%
                     );
                   }
                 }
@@ -414,7 +414,7 @@
           }
 
           .content {
-            border: 1.5px solid rgba(41, 255, 50, 1);
+            border: 1.5px solid rgb(255, 255, 255);
             padding-top: 6px;
             padding-bottom: 6px;
             border-bottom-right-radius: 15px;
@@ -439,7 +439,7 @@
               letter-spacing: 1.5px;
 
               span {
-                color: rgba(41, 255, 50, 1);
+                color: rgb(255, 255, 255);
               }
 
               @media screen and (max-width: 515px) {
@@ -463,7 +463,7 @@
               letter-spacing: 1.5px;
 
               span {
-                color: rgba(41, 255, 50, 1);
+                color: rgb(255, 255, 255);
               }
 
               @media screen and (max-width: 515px) {
@@ -481,7 +481,7 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
-              color: rgba(41, 255, 50, 1);
+              color: rgb(255, 255, 255);
               font-size: 18px;
 
               @media screen and (max-width: 515px) {

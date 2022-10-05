@@ -61,7 +61,7 @@ const Content = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h1>TOKEN STAKING</h1>
+        <h1>My Token Staking</h1>
         <div className={styles.cards}>
           <div className={styles.left}>
             <Card

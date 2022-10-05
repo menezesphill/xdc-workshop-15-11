@@ -1,8 +1,7 @@
 import { createContext, useCallback, useEffect, useState } from "react";
 import Web3Modal from "web3modal";
-import WalletConnectProvider from "@walletconnect/web3-provider";
 import Web3 from "web3";
-import detectEthereumProvider from "@metamask/detect-provider";
+import { providerOptions } from "xdcpay-connect";
 
 interface IWeb3ModalContext {
   web3: Web3 | null;
@@ -33,23 +32,6 @@ const Web3ModalProvider = ({ children }) => {
   const [connected, setConnected] = useState<boolean>(false);
 
   useEffect(() => {
-    const providerOptions = {
-      "custom-xdc": {
-        display: {
-          name: "XDC Pay",
-          logo: "https://s2.coinmarketcap.com/static/img/coins/64x64/2634.png",
-          description: "Connect with XDC Pay",
-        },
-        package: detectEthereumProvider,
-        connector: async (_detectEthereumProvider) => {
-          const provider = await _detectEthereumProvider();
-          console.log("provider", provider);
-          await provider.enable();
-          return provider;
-        },
-      },
-    };
-
     const _web3Modal = new Web3Modal({
       cacheProvider: true, // optional
       providerOptions, // required
