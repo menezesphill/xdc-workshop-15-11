@@ -1,1 +1,0 @@
-# xdc-staking-dapp
