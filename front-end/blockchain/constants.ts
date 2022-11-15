@@ -1,17 +1,11 @@
 export const myToken = {
   Contract: {
-    51: '0xDD28424e277014104A946A113f7eAf70D98C414f'
+    51: '0xAdf97De33fE9EFfE095f8724765f245F1bBd28F8'
   },
 }
 
 export const stakingAddress = {
   StakingRewards: {
-    51: '0x037C45dEa764DAa791A4A37825Ae49D82fB53E4e',
-  },
-}
-
-export const faucetAddress = {
-  Faucet: {
-    51: '0x7a93d460870e354E1274e7d1f59c37305a6AcD4f',
+    51: '0x5e73451e11C54131DBE696a142dBA36fb0B1e402',
   },
 }

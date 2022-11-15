@@ -3,8 +3,8 @@
 // Contract Application Binary Interfaces ( From JSON artifacts )
 // Contract Addresses ( We can use Truffle Networks )
 
-import StakingWrapper from "../../blockchain/StakingWrapper";
-import TokenWrapper from "../../blockchain/TokenWrapper"; 
+import StakingWrapper from "../blockchain/StakingWrapper";
+import TokenWrapper from "../blockchain/TokenWrapper";
 
 import { createContext, useEffect, useState, useContext } from "react";
 import { Web3ModalContext } from "./Web3ModalProvider";

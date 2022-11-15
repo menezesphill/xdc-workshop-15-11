@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { TokenContext } from "../../../../contexts/TokenProvider";
+import { SmartContractContext } from "../../../../contexts/SmartContractProvider";
 import { PopupContext } from "../../../../contexts/popup";
 import { Web3ModalContext } from "../../../../contexts/Web3ModalProvider";
 import { StakingStatusContext } from "../../../../contexts/StakingStatusUpdate";
@@ -22,7 +22,7 @@ const Card = ({ ...props }: CardProps) => {
     useContext(PopupContext);
 
   const { account } = useContext(Web3ModalContext);
-  const { tokenWrapper: Token } = useContext(TokenContext);
+  const { tokenWrapper: Token } = useContext(SmartContractContext);
   const { stakingStatusUpdated, setStakingStatusUpdated } =
     useContext(StakingStatusContext);
 

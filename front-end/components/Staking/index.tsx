@@ -4,16 +4,16 @@ import { useContext, useEffect, useState } from "react";
 
 import styles from "./styles.module.scss";
 
-import { StakingContext } from "../../contexts/StakingProvider";
+import { SmartContractContext } from "../../contexts/SmartContractProvider";
 import { StakingStatusContext } from "../../contexts/StakingStatusUpdate";
 import { Web3ModalContext } from "../../contexts/Web3ModalProvider";
 
 const Content = () => {
-  const { account, chainId, connected } = useContext(Web3ModalContext);
+  const { account, chainId } = useContext(Web3ModalContext);
 
   const [active, setActive] = useState(false);
 
-  const { stakingWrapper: StakingRewards } = useContext(StakingContext);
+  const { stakingWrapper: StakingRewards } = useContext(SmartContractContext);
 
   const [stakedBalance, setStakedBalance] = useState("0");
   const [myBalance, setMyBalance] = useState("0");
@@ -54,8 +54,7 @@ const Content = () => {
     active,
     myRewards,
     stakingStatusUpdated,
-    myBalance,
-    connected
+    myBalance
   ]);
 
   return (
