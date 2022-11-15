@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
 import { PopupContext } from "../../../contexts/popup";
-import { StakingContext } from "../../../contexts/StakingProvider";
+import { BlockchainContext } from "../../../contexts/BlockchainProvider";
 import { StakingStatusContext } from '../../../contexts/StakingStatusUpdate';
-import { TokenContext } from "../../../contexts/TokenProvider";
 import styles from "./styles.module.scss";
 
 
@@ -15,8 +14,8 @@ const ConfirmDeposit = ({...props} : ConfirmDepositProps) => {
 
   const [ amountToDeposit, setAmountToDeposit ] = useState('');
 
-  const { stakingWrapper: StakingRewards } = useContext(StakingContext);
-  const { tokenWrapper: Token } = useContext(TokenContext);
+  const { stakingWrapper: StakingRewards } = useContext(BlockchainContext);
+  const { tokenWrapper: Token } = useContext(BlockchainContext);
   const { stakingStatusUpdated, setStakingStatusUpdated } = useContext(StakingStatusContext);
 
   const handleDeposit = () => {

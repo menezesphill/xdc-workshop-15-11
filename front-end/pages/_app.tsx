@@ -1,9 +1,8 @@
 import type { AppProps } from "next/app";
-import TokenProvider from "../contexts/TokenProvider";
-import StakingProvider from "../contexts/StakingProvider";
 import StakingStatusProvider from "../contexts/StakingStatusUpdate";
 import PopupProvider from "../contexts/popup";
 import Web3ModalProvider from "../contexts/Web3ModalProvider";
+import BlockchainProvider from "../contexts/BlockchainProvider";
 import "../styles/globals.scss";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -23,11 +22,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 const BlockchainProviders = (props: any) => {
   return (
     <Web3ModalProvider>
-      <TokenProvider>
-        <StakingProvider>
+      <BlockchainProvider>
           {props.children}
-        </StakingProvider>
-      </TokenProvider>
+      </BlockchainProvider>
     </Web3ModalProvider>
   )
 }

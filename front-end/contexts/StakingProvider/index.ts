@@ -1,1 +1,0 @@
-export { default, StakingContext } from './StakingProvider';

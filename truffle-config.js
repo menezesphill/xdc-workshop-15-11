@@ -1,5 +1,4 @@
 require('dotenv').config();
-const { MNEMONIC } = process.env;
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
 module.exports = {
@@ -8,7 +7,7 @@ module.exports = {
 
     xinfin: {
       provider: () => new HDWalletProvider(
-        MNEMONIC,
+        process.env.MNEMONIC,
         'https://erpc.xinfin.network'),
       network_id: 50,
       gasLimit: 6721975,
@@ -17,7 +16,7 @@ module.exports = {
 
     apothem: {
       provider: () => new HDWalletProvider(
-        MNEMONIC,
+        process.env.MNEMONIC,
         'https://erpc.apothem.network'),
       network_id: 51,
       gasLimit: 6721975,
