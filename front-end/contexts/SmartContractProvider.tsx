@@ -9,17 +9,17 @@ import TokenWrapper from "../../blockchain/TokenWrapper";
 import { createContext, useEffect, useState, useContext } from "react";
 import { Web3ModalContext } from "./Web3ModalProvider";
 
-interface BlockchainContext {
+interface SmartContractContext {
     stakingWrapper: StakingWrapper | null;
     tokenWrapper: TokenWrapper | null;
 }
 
-export const BlockchainContext = createContext<BlockchainContext>({
+export const SmartContractContext = createContext<SmartContractContext>({
     stakingWrapper: null,
     tokenWrapper: null,
 });
 
-const BlockchainProvider = ({ children }) => {
+const SmartContractProvider = ({ children }) => {
 
     const { web3, chainId, account } = useContext(Web3ModalContext);
     const [ stakingWrapper, setStakingWrapper ] = useState<StakingWrapper | null>(null);
@@ -41,11 +41,11 @@ const BlockchainProvider = ({ children }) => {
     }, [web3, chainId, account]);
 
     return(
-        <BlockchainContext.Provider value={{ stakingWrapper, tokenWrapper }}>
+        <SmartContractContext.Provider value={{ stakingWrapper, tokenWrapper }}>
             {children}
-        </BlockchainContext.Provider>
+        </SmartContractContext.Provider>
         );
         
 }
 
-export default BlockchainProvider;
+export default SmartContractProvider;

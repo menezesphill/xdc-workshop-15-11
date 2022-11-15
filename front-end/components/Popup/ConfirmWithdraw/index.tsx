@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { PopupContext } from "../../../contexts/popup";
-import { BlockchainContext } from "../../../contexts/BlockchainProvider";
+import { SmartContractContext } from "../../../contexts/SmartContractProvider";
 import { StakingStatusContext } from '../../../contexts/StakingStatusUpdate';
 import styles from "./styles.module.scss";
 
@@ -10,7 +10,7 @@ type ConfirmWithdrawProps = {
 
 const ConfirmWithdraw = ({...props} : ConfirmWithdrawProps) => {
   const { balance, setOpenedPopup } = useContext(PopupContext);
-  const { stakingWrapper: StakingRewards } = useContext(BlockchainContext);
+  const { stakingWrapper: StakingRewards } = useContext(SmartContractContext);
   const { stakingStatusUpdated, setStakingStatusUpdated } = useContext(StakingStatusContext);
 
   const handleExit = () => {

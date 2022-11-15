@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { PopupContext } from "../../../contexts/popup";
-import { BlockchainContext } from "../../../contexts/BlockchainProvider";
+import { SmartContractContext } from "../../../contexts/SmartContractProvider";
 import { StakingStatusContext } from '../../../contexts/StakingStatusUpdate';
 import styles from "./styles.module.scss";
 
@@ -11,7 +11,7 @@ type ClaimProps = {
 
 const ConfirmClaim = ({...props} : ClaimProps) => {
   const { setOpenedPopup } = useContext(PopupContext);
-  const { stakingWrapper: StakingRewards } = useContext(BlockchainContext);
+  const { stakingWrapper: StakingRewards } = useContext(SmartContractContext);
   const { stakingStatusUpdated, setStakingStatusUpdated } = useContext(StakingStatusContext);
 
   const handleClaim = () => {
