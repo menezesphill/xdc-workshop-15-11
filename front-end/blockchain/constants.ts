@@ -1,11 +1,11 @@
 export const myToken = {
   Contract: {
-    51: '0xAdf97De33fE9EFfE095f8724765f245F1bBd28F8'
+    51: '0xeF122c3EedF4Bd264eB5A3F24b6c90639caBEaC3'
   },
 }
 
 export const stakingAddress = {
   StakingRewards: {
-    51: '0x5e73451e11C54131DBE696a142dBA36fb0B1e402',
+    51: '0x45D4F8924b805BCFc086F6F79e46f53573d752Cb',
   },
 }
